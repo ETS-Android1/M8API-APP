@@ -2,6 +2,7 @@ package com.example.m8api_app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -28,10 +29,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(textname.getText().toString().equals("adam")&& password.getText().toString().equals("adam")){
                     Log.i("Test","Bien");
+                    goToMenu();
                 }else{
                     Log.i("Test","Mal");
                 }
             }
         });
     }
+
+    public void goToMenu(){
+        Intent intentmenu = new Intent(this,Menu.class);
+        startActivity(intentmenu);
+    }
+
 }
