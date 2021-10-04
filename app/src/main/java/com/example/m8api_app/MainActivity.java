@@ -16,11 +16,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Declarations
         TextView textView = findViewById(R.id.textView);
         Button registrar = findViewById(R.id.registrar);
         EditText textname = findViewById(R.id.textname);
         EditText password = findViewById(R.id.password);
 
+        //Button which confirms that the password and the name are ok
         registrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
