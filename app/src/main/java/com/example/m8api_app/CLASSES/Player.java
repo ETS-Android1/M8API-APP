@@ -9,6 +9,8 @@ public class Player implements Serializable {
     public int shirtNo;
     public int goal;
 
+    //Porfavor funciona
+
     public Player(){
     }
 
