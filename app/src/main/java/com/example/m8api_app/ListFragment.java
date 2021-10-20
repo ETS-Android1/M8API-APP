@@ -26,9 +26,9 @@ public class ListFragment extends Fragment {
 
         View player = inflater.inflate(R.layout.fragment_list,container,false);
         ArrayList<Player> players = new ArrayList<Player>();
-        players.add(new Player("Adan", 20, "delantero", 10, 200));
+        players.add(new Player("Adam", 20, "delantero", 10, 200));
         players.add(new Player("Marta", 30, "delantera", 1, 100));
-        players.add(new Player("Miguel", 21, "centrocampista", 7, 10));
+        players.add(new Player("Miguel", 21, "centrocampista", 9, 10));
         players.add(new Player("Eric", 20, "portero", 12, 1));
         players.add(new Player("Arnau", 19, "delantero", 5, 5));
 
