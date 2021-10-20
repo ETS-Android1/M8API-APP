@@ -66,9 +66,18 @@ public class FormFragment extends Fragment {
         //Declarations
         Button BGuardarPlayer = viewForm.findViewById(R.id.BGuardarPlayer);
         EditText editTextTextPersonName = viewForm.findViewById(R.id.editTextTextPersonName);
+        EditText dato1 = viewForm.findViewById(R.id.dato1);
+        EditText dato2 = viewForm.findViewById(R.id.dato2);
+        EditText dato3 = viewForm.findViewById(R.id.dato3);
+        EditText dato4 = viewForm.findViewById(R.id.dato4);
         BGuardarPlayer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //editTextTextPersonName.getText().toString()
+                //dato1.getText().toString()
+                //dato2.getText().toString()
+                //dato3.getText().toString()
+                //dato4.getText().toString()
                 //players.add());
             }
         });
