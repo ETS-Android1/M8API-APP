@@ -10,6 +10,10 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.Button;
 
+import com.example.m8api_app.CLASSES.Player;
+
+import java.util.ArrayList;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link FormFragment#newInstance} factory method to
@@ -25,6 +29,8 @@ public class FormFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    private ArrayList<Player> array_players;
 
     public FormFragment() {
         // Required empty public constructor
@@ -73,12 +79,16 @@ public class FormFragment extends Fragment {
         BGuardarPlayer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //editTextTextPersonName.getText().toString()
-                //dato1.getText().toString()
-                //dato2.getText().toString()
-                //dato3.getText().toString()
-                //dato4.getText().toString()
-                //players.add());
+                //Crear objecte Player amb les dades
+                String playerName = editTextTextPersonName.getText().toString();
+                int age = Integer.parseInt(dato1.getText().toString());
+                String position = dato2.getText().toString();
+                int shirtNo = Integer.parseInt(dato3.getText().toString());
+                int goal = Integer.parseInt(dato4.getText().toString());
+
+                Player p = new Player(playerName, age, position, shirtNo, goal);
+
+                //array_players.add(p.Player(playerName, age, position, shirtNo, goal));
             }
         });
 
