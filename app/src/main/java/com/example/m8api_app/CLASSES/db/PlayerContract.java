@@ -10,7 +10,7 @@ public class PlayerContract {
         public static final String COLUMN_NAME_NAME = "name";
         public static final String COLUMN_NAME_AGE = "age";
         public static final String COLUMN_NAME_POSITION = "position";
-        public static final String COLUMN_NAME_SHIRTNO = "shirt no";
+        public static final String COLUMN_NAME_SHIRTNO = "shirtNum";
         public static final String COLUMN_NAME_GOAL = "goal";
     }
 }

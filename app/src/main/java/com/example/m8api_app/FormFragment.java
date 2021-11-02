@@ -1,5 +1,6 @@
 package com.example.m8api_app;
 
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -11,6 +12,7 @@ import android.widget.EditText;
 import android.widget.Button;
 
 import com.example.m8api_app.CLASSES.Player;
+import com.example.m8api_app.CLASSES.db.PlayerDBHelper;
 
 import java.util.ArrayList;
 
@@ -25,17 +27,20 @@ public class FormFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    private PlayerDBHelper dbHelper;
+    private SQLiteDatabase db;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
-    private ArrayList<Player> array_players;
-
     public FormFragment() {
         // Required empty public constructor
     }
-
+    public FormFragment(PlayerDBHelper dbHelper, SQLiteDatabase db) {
+        this.dbHelper = dbHelper;
+        this.db = db;
+    }
     /**
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
@@ -57,6 +62,7 @@ public class FormFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
@@ -77,17 +83,13 @@ public class FormFragment extends Fragment {
         EditText dato3 = viewForm.findViewById(R.id.dato3);
         EditText dato4 = viewForm.findViewById(R.id.dato4);
         BGuardarPlayer.setOnClickListener(new View.OnClickListener() {
-            @Override
             public void onClick(View v) {
                 //Crear objecte Player amb les dades
-                String playerName = editTextTextPersonName.getText().toString();
-                int age = Integer.parseInt(dato1.getText().toString());
-                String position = dato2.getText().toString();
-                int shirtNo = Integer.parseInt(dato3.getText().toString());
-                int goal = Integer.parseInt(dato4.getText().toString());
 
-                Player p = new Player(playerName, age, position, shirtNo, goal);
+                Player p = new Player(editTextTextPersonName.getText().toString(), Integer.parseInt(dato1.getText().toString()),
+                        dato2.getText().toString(), Integer.parseInt(dato3.getText().toString()), Integer.parseInt(dato4.getText().toString()));
 
+                dbHelper.insertContact(db, p);
                 //array_players.add(p.Player(playerName, age, position, shirtNo, goal));
             }
         });
