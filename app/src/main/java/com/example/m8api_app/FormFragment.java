@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.m8api_app.CLASSES.Player;
 import com.example.m8api_app.CLASSES.db.PlayerDBHelper;
@@ -90,10 +91,19 @@ public class FormFragment extends Fragment {
                         dato2.getText().toString(), Integer.parseInt(dato3.getText().toString()), Integer.parseInt(dato4.getText().toString()));
 
                 dbHelper.insertContact(db, p);
+                Toast.makeText(getActivity(),"Creado correctamente baby", Toast.LENGTH_SHORT).show();
                 //array_players.add(p.Player(playerName, age, position, shirtNo, goal));
             }
         });
 
+
+        Button BBorrar = viewForm.findViewById(R.id.BBorrar);
+        BBorrar.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                dbHelper.delete();
+                Toast.makeText(getActivity(),"Eliminado correctamente baby", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         return viewForm;
     }
