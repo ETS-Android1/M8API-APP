@@ -1,6 +1,6 @@
 # M8API-APP
 
-# Readme example
+# Readme ADAM
 Project about soccer players!
 
 ## Tasks
