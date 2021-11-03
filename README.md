@@ -7,6 +7,7 @@ Project about soccer players!
 In my project you'll be able to:
 * Login
 * Add players to a local database
+* Delete all
 * View!!!
 
 ## Screenshots
@@ -52,6 +53,7 @@ I've used this extra clases:
 - [x] Local Storage Sqlite
 - [x] Three Menus
 - [x] Recycler View of Players
+- [x] Delete
 
 ## Difficulties
 
