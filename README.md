@@ -38,6 +38,7 @@ I've used this extra clases:
 * SQLiteDatabase for the local storage
 * Fragment Manager
 * Recycler View
+* Toast
 * Google
 * Others
 
@@ -54,6 +55,7 @@ I've used this extra clases:
 - [x] Three Menus
 - [x] Recycler View of Players
 - [x] Delete
+- [x] Toast
 
 ## Difficulties
 
