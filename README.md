@@ -10,14 +10,18 @@ In my project you'll be able to:
 * View!!!
 
 ## Screenshots
+
+The navigation of the application is done through the bottom navigation and the fragments!
+
+#### Login
+
 #### Bottom navigation
-The navigation of the application is done through the bottom navigation and the fragments
 
-![GitHub Logo](https://user-images.githubusercontent.com/48833600/140034915-aa779b11-c36b-4172-8f80-15b152e81179.jpg)
 
-#### Splash Screen
 
-#### ...
+#### Adding players
+
+#### Showing recycler
 
 ## Technologies
 This project is developed with android studio (java).
@@ -35,11 +39,12 @@ I've used this extra clases:
 * Password : adam
 
 
-## Finished / unfinished Tasks
+## Finished Tasks
 - [x] Login screen
 - [x] Bottom navigation
 - [x] Local Storage Sqlite
 - [x] Three Menus
+- [x] Recycler View of Players
 
 ## Difficulties
 
