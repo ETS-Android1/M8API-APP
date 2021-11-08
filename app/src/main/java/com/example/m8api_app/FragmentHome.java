@@ -16,6 +16,7 @@ import android.widget.Toast;
 import com.example.m8api_app.CLASSES.Player;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class FragmentHome extends Fragment {
 
