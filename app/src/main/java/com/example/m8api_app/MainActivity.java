@@ -2,7 +2,9 @@ package com.example.m8api_app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -11,6 +13,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
+    SharedPreferences prefs= getSharedPreferences("SharedP", Context.MODE_PRIVATE);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +33,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(textname.getText().toString().equals("adam")&& password.getText().toString().equals("adam")){
                     Log.i("Test","Bien");
+
+                    SharedPreferences prefs= getSharedPreferences("SharedP", Context.MODE_PRIVATE);
+                    String nom = prefs.getString("nom", "");
+
+                    prefs.edit().putString("nom", "adam");
+                    prefs.edit().putBoolean("login", true);
                     goToMenu();
                 }else{
                     Log.i("Test","Mal");
