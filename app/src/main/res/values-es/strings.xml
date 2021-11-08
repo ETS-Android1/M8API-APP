@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">M8API-APP</string>
+    <string name="textView">Bienvenido</string>
+    <string name="registrar">Registrar</string>
+    <string name="BGuardarPlayer">Añadir</string>
+    <string name="BBorrar">Borrar</string>
+    <string name="dato2">Delantero</string>
+</resources>
