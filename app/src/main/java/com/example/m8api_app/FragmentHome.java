@@ -36,19 +36,19 @@ public class FragmentHome extends Fragment {
 
         BEspaña.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-
+            //Hay  que poner algo que active
             }
         });
 
         BCatala.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-
+             //Hay  que poner algo que active
             }
         });
 
         BAngles.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-
+                //Hay  que poner algo que active
             }
         });
 
