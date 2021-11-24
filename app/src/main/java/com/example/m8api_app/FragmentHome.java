@@ -36,7 +36,7 @@ public class FragmentHome extends Fragment {
 
         BEspaña.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-            //Hay  que poner algo que active
+               // prefs.edit().putString("language", "en").commit();
             }
         });
 

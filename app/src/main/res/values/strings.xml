@@ -1,8 +1,10 @@
 <resources>
-<string name="app_name">M8API-APP</string>
-<string name="textView">Welcome</string>
-<string name="registrar">Registrate</string>
-<string name="BGuardarPlayer">Add</string>
-<string name="BBorrar">Delete</string>
-<string name="dato2">Striker</string>
+    <string name="app_name">M8API-APP</string>
+    <string name="textView">Welcome</string>
+    <string name="registrar">Registrate</string>
+    <string name="BGuardarPlayer">Add</string>
+    <string name="BBorrar">Delete</string>
+    <string name="dato2">Striker</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
