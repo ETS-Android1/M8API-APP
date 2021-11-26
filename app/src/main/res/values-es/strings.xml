@@ -5,4 +5,5 @@
     <string name="BGuardarPlayer">Añadir</string>
     <string name="BBorrar">Borrar</string>
     <string name="dato2">Delantero</string>
+    <string name="BSesionC">Cerrar sesión</string>
 </resources>
