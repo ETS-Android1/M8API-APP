@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 String txtPassword = password.getText().toString();
                 //If the user is admin and the password is admin, you will enter the if
                 if (checkBox.isChecked()==true){
-                    guardarPreferancias();
+                    guardarPreferencias();
                 }
                 if(textname.getText().toString().equals("adam")&& password.getText().toString().equals("adam")){
                     Log.i("Test","Bien");
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intentmenu);
     }
 
-    private void guardarPreferancias() {
+    private void guardarPreferencias() {
         SharedPreferences preferences = getSharedPreferences
                 ("credenciales", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = preferences.edit();

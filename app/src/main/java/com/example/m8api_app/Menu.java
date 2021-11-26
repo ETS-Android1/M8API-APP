@@ -21,9 +21,10 @@ public class Menu extends AppCompatActivity {
 
         dbHelper = new PlayerDBHelper(getApplicationContext());
         db = dbHelper.getWritableDatabase();
-        dbHelper.dropTable(db);
-        dbHelper.onCreate(db);
+
         BottomNavigationView bottomNav = findViewById(R.id.main_menu);
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new FragmentHome()).commit();
 
         bottomNav.setOnItemSelectedListener(item -> {
             Fragment selectedFragment = null;
